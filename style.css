@@ -191,3 +191,7 @@ body {
   border-right-color: #9e9a9a;
   border-left-color: #9e9a9a;
 }
+
+.left-button svg path {
+  fill: #66666640;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[Book] Yeonjin Lee - Intro</title>
+    <!-- favicon -->
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="apple-touch-icon" href="../favicon.ico" />
+
+    <link rel="stylesheet" href="../inner.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="content">
+        <header class="header">
+          <div class="line"></div>
+          <h2>Introduce Me!</h2>
+        </header>
+        <div class="content-text intro">
+          <div class="part-title">
+            <h3>about</h3>
+          </div>
+          <div class="part-text intro">
+            <div class="project-icon">
+              <svg
+                width="160"
+                height="160"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="16" height="16" rx="8" fill="#00B2FF" />
+                <path
+                  d="M8.50839 5.124C8.22839 5.124 7.99639 5.04 7.81239 4.872C7.63639 4.704 7.54839 4.492 7.54839 4.236C7.54839 3.98 7.63639 3.772 7.81239 3.612C7.99639 3.444 8.22839 3.36 8.50839 3.36C8.78839 3.36 9.01639 3.444 9.19239 3.612C9.37639 3.772 9.46839 3.98 9.46839 4.236C9.46839 4.492 9.37639 4.704 9.19239 4.872C9.01639 5.04 8.78839 5.124 8.50839 5.124ZM7.74039 12V6.048H9.27639V12H7.74039Z"
+                  fill="white"
+                />
+                <path
+                  d="M7.50839 5.124C7.22839 5.124 6.99639 5.04 6.81239 4.872C6.63639 4.704 6.54839 4.492 6.54839 4.236C6.54839 3.98 6.63639 3.772 6.81239 3.612C6.99639 3.444 7.22839 3.36 7.50839 3.36C7.78839 3.36 8.01639 3.444 8.19239 3.612C8.37639 3.772 8.46839 3.98 8.46839 4.236C8.46839 4.492 8.37639 4.704 8.19239 4.872C8.01639 5.04 7.78839 5.124 7.50839 5.124ZM6.74039 12V6.048H8.27639V12H6.74039Z"
+                  fill="white"
+                  fill-opacity="0.6"
+                />
+              </svg>
+            </div>
+            <span class="highlight">BootStrap</span>의
+            <span class="highlight">grid-system</span>을 활용한 반응형 웹
+            프로젝트. <br /><br />
+            Figma 디자인 툴을 배우고 난 후, 웹 디자인 및 기획을 스스로 진행하기
+            시작함. <br />
+            <span class="highlight">Put on a Mask</span> 를 줄인 말을 의미함.
+            <br /><br />
+            <span class="highlight">CSS animation</span>과 layout (flex 등)을
+            활용한 스타일링. <br />
+            그 외에도 :hover이나 :active 등 가상 클래스를 활용하여 다양한 효과를
+            줌.<br />
+            <div class="stack-space">
+              <h3>Stack</h3>
+              <span class="stack">Bootstrap</span> - Grid System (Responsive
+              Web)
+            </div>
+          </div>
+        </div>
+
+        <div class="go-back-button">
+          <svg
+            width="100"
+            height="100"
+            viewBox="0 0 100 100"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="50" cy="50" r="49.5" fill="#9A0C0C" stroke="#F8F8F8" />
+            <path
+              d="M25 35C25 35 28.75 30 37.5 30C46.25 30 50 35 50 35V70C50 70 46.25 67.5 37.5 67.5C28.75 67.5 25 70 25 70V35ZM50 35C50 35 53.75 30 62.5 30C71.25 30 75 35 75 35V70C75 70 71.25 67.5 62.5 67.5C53.75 67.5 50 70 50 70V35Z"
+              stroke="white"
+              stroke-width="3.33333"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path d="M51 94L38.0096 86.5H63.9904L51 94Z" fill="white" />
+          </svg>
+        </div>
+      </div>
+      <div class="right-plane">
+        <div class="right-1"></div>
+        <div class="right-2"></div>
+        <div class="right-3"></div>
+        <div class="right-4"></div>
+        <div class="bookmark-1 current-bookmark" data-part="about"></div>
+        <div class="bookmark-2" data-part="github"></div>
+        <div class="bookmark-3" data-part="publish"></div>
+      </div>
+    </div>
+
+    <script>
+      $goBack = document.querySelector('.go-back-button');
+
+      $goBack.addEventListener('click', () => {
+        window.open('./open-8.html', '_self');
+      });
+
+      $bookmark1 = document.querySelector('.bookmark-1');
+      $bookmark2 = document.querySelector('.bookmark-2');
+      $bookmark3 = document.querySelector('.bookmark-3');
+
+      $bookmark1.addEventListener('click', () => {
+        window.open('./inner1.html', '_self');
+      });
+      $bookmark2.addEventListener('click', () => {
+        window.open('./inner2.html', '_self');
+      });
+      $bookmark3.addEventListener('click', () => {
+        window.open('./inner3.html', '_self');
+      });
+    </script>
+  </body>
+</html>

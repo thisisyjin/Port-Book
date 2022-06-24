@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[Book] Yeonjin Lee - Momentum</title>
+    <!-- favicon -->
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="apple-touch-icon" href="../favicon.ico" />
+
+    <link rel="stylesheet" href="../inner.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="content">
+        <header class="header">
+          <div class="line"></div>
+          <h2>Momentum-clone</h2>
+        </header>
+        <div class="content-text intro">
+          <div class="part-title">
+            <h3>about</h3>
+          </div>
+          <div class="part-text intro">
+            <div class="project-icon">
+              <svg
+                width="160"
+                height="160"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="32" height="32" rx="16" fill="#103C09" />
+                <path
+                  d="M7.11364 21L8.93182 10.0909H12.6534L12.3125 12.1648H12.4261C12.7623 11.483 13.2382 10.9432 13.8537 10.5455C14.4692 10.1477 15.1581 9.94886 15.9205 9.94886C16.6828 9.94886 17.3078 10.1525 17.7955 10.5597C18.2831 10.9621 18.5294 11.4972 18.5341 12.1648H18.6477C18.9413 11.4972 19.4219 10.9621 20.0895 10.5597C20.7571 10.1525 21.4981 9.94886 22.3125 9.94886C23.3494 9.94886 24.1378 10.285 24.6776 10.9574C25.2221 11.6297 25.3996 12.5246 25.2102 13.642L23.9886 21H20.0682L21.1477 14.6364C21.214 14.1581 21.1477 13.7841 20.9489 13.5142C20.75 13.2396 20.447 13.1023 20.0398 13.1023C19.6373 13.1023 19.2964 13.2396 19.017 13.5142C18.7424 13.7841 18.572 14.1581 18.5057 14.6364L17.4261 21H13.6761L14.7557 14.6364C14.822 14.1581 14.7557 13.7841 14.5568 13.5142C14.358 13.2396 14.0549 13.1023 13.6477 13.1023C13.3826 13.1023 13.1411 13.1638 12.9233 13.2869C12.7102 13.41 12.5327 13.5876 12.3906 13.8196C12.2533 14.0469 12.161 14.3191 12.1136 14.6364L11.0341 21H7.11364Z"
+                  fill="#ABD0D9"
+                />
+              </svg>
+            </div>
+            Google 확장 프로그램인 <span class="highlight">Momentum</span> 의
+            기능을 새롭게 제작한 프로젝트. <br /><br />
+            <span class="highlight">vanil JS</span> 와 CSS 스타일링 연습을 위해
+            제작함. <span class="highlight">Local Storage</span> 와
+            <span class="highlight">Geolocation API</span>, setInterval 등의 JS
+            Syntax를 익힘. <br /><br />
+            Background 이미지와 명언(quote) 텍스트를 랜덤으로 렌더링함.
+            (Math.random)
+            <br />
+            <div class="stack-space">
+              <h3>Stack</h3>
+              only <span class="stack">vanila JS</span> (별도의 프레임워크 없이
+              진행)
+            </div>
+          </div>
+        </div>
+
+        <div class="go-back-button">
+          <svg
+            width="100"
+            height="100"
+            viewBox="0 0 100 100"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="50" cy="50" r="49.5" fill="#9A0C0C" stroke="#F8F8F8" />
+            <path
+              d="M25 35C25 35 28.75 30 37.5 30C46.25 30 50 35 50 35V70C50 70 46.25 67.5 37.5 67.5C28.75 67.5 25 70 25 70V35ZM50 35C50 35 53.75 30 62.5 30C71.25 30 75 35 75 35V70C75 70 71.25 67.5 62.5 67.5C53.75 67.5 50 70 50 70V35Z"
+              stroke="white"
+              stroke-width="3.33333"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path d="M51 94L38.0096 86.5H63.9904L51 94Z" fill="white" />
+          </svg>
+        </div>
+      </div>
+      <div class="right-plane">
+        <div class="right-1"></div>
+        <div class="right-2"></div>
+        <div class="right-3"></div>
+        <div class="right-4"></div>
+        <div class="bookmark-1 current-bookmark" data-part="about"></div>
+        <div class="bookmark-2" data-part="github"></div>
+        <div class="bookmark-3" data-part="publish"></div>
+      </div>
+    </div>
+
+    <script>
+      $goBack = document.querySelector('.go-back-button');
+
+      $goBack.addEventListener('click', () => {
+        window.open('./open-5.html', '_self');
+      });
+
+      $bookmark1 = document.querySelector('.bookmark-1');
+      $bookmark2 = document.querySelector('.bookmark-2');
+      $bookmark3 = document.querySelector('.bookmark-3');
+
+      $bookmark1.addEventListener('click', () => {
+        window.open('./inner1.html', '_self');
+      });
+      $bookmark2.addEventListener('click', () => {
+        window.open('./inner2.html', '_self');
+      });
+      $bookmark3.addEventListener('click', () => {
+        window.open('./inner3.html', '_self');
+      });
+    </script>
+  </body>
+</html>

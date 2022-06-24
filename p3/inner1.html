@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[Book] Yeonjin Lee - Rainy</title>
+    <!-- favicon -->
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="apple-touch-icon" href="../favicon.ico" />
+
+    <link rel="stylesheet" href="../inner.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="content">
+        <header class="header">
+          <div class="line"></div>
+          <h2>Rainy-Player</h2>
+        </header>
+        <div class="content-text intro">
+          <div class="part-title">
+            <h3>about</h3>
+          </div>
+          <div class="part-text intro">
+            <div class="project-icon">
+              <svg
+                width="160"
+                height="160"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="32" height="32" rx="8" fill="#A1BFC8" />
+                <path
+                  d="M9 18.0533C9 19.28 9.30667 20.4267 9.93333 21.48C10.56 22.5333 11.4 23.3867 12.4667 24.0133C13.5333 24.64 14.68 24.96 15.92 24.96C17.16 24.96 18.32 24.64 19.4 24.0133C20.4578 23.4042 21.3398 22.5314 21.96 21.48C22.5867 20.4133 22.9067 19.28 22.9067 18.0533C22.9067 17.2533 22.68 16.3067 22.2133 15.2C21.7467 14.0933 21.1867 13.0667 20.5333 12.1333C19.9467 11.3733 19.2533 10.5333 18.4533 9.62667C17.6533 8.72 16.2533 7.32 15.9333 7L14.2267 8.72C13.4 9.52 12.6 10.44 11.84 11.4933C11.08 12.5467 10.4133 13.68 9.85333 14.8933C9.26667 16.1067 9 17.16 9 18.0533Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            평소 빗소리를 들으며 명상을 하곤 하는데, 타이머 시간 설정을 하여
+            빗소리를 들을 수 있는 <span class="highlight">rainy-player</span> 을
+            개발하면 좋겠다고 생각하여 기획한 프로젝트. <br /><br />
+            <span class="highlight">vanila JS</span> 만으로 제작하고 싶어 별도의
+            프레임워크 없이 개발함. <br />
+            <span class="highlight">setInterval</span> 을 이용한 비동기 함수를
+            통해 타이머를 구현하였음.
+            <br />
+            <br />
+            portrait, landscape 모드로 총
+            <span class="highlight">두가지 모드</span>가 존재하고,
+            <br />
+            현재 모바일 최적화는 진행중에 있음. (Desktop mode 권장)
+            <div class="stack-space">
+              <h3>Stack</h3>
+              only <span class="stack">vanila JS</span>! 별도의 프레임워크 없이
+              진행.
+            </div>
+          </div>
+        </div>
+
+        <div class="go-back-button">
+          <svg
+            width="100"
+            height="100"
+            viewBox="0 0 100 100"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="50" cy="50" r="49.5" fill="#9A0C0C" stroke="#F8F8F8" />
+            <path
+              d="M25 35C25 35 28.75 30 37.5 30C46.25 30 50 35 50 35V70C50 70 46.25 67.5 37.5 67.5C28.75 67.5 25 70 25 70V35ZM50 35C50 35 53.75 30 62.5 30C71.25 30 75 35 75 35V70C75 70 71.25 67.5 62.5 67.5C53.75 67.5 50 70 50 70V35Z"
+              stroke="white"
+              stroke-width="3.33333"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path d="M51 94L38.0096 86.5H63.9904L51 94Z" fill="white" />
+          </svg>
+        </div>
+      </div>
+      <div class="right-plane">
+        <div class="right-1"></div>
+        <div class="right-2"></div>
+        <div class="right-3"></div>
+        <div class="right-4"></div>
+        <div class="bookmark-1 current-bookmark" data-part="about"></div>
+        <div class="bookmark-2" data-part="github"></div>
+        <div class="bookmark-3" data-part="publish"></div>
+      </div>
+    </div>
+
+    <script>
+      $goBack = document.querySelector('.go-back-button');
+
+      $goBack.addEventListener('click', () => {
+        window.open('./open-3.html', '_self');
+      });
+
+      $bookmark1 = document.querySelector('.bookmark-1');
+      $bookmark2 = document.querySelector('.bookmark-2');
+      $bookmark3 = document.querySelector('.bookmark-3');
+
+      $bookmark1.addEventListener('click', () => {
+        window.open('./inner1.html', '_self');
+      });
+      $bookmark2.addEventListener('click', () => {
+        window.open('./inner2.html', '_self');
+      });
+      $bookmark3.addEventListener('click', () => {
+        window.open('./inner3.html', '_self');
+      });
+    </script>
+  </body>
+</html>
