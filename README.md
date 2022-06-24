@@ -5,7 +5,7 @@
 <br />
 
 # [🌐 배포](https://thisisyjin.github.io/Port-Book/)
-
+- `gh-pages`로 배포 - beta ver.
 
 ***
 
