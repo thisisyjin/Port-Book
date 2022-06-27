@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -94,7 +96,7 @@ a {
   width: 71.47px;
   height: 519.6px;
   left: 453px;
-  top: -9.4px;
+  top: 5px;
   background: rgba(197, 197, 197, 0.4);
   transform: matrix(1, -0.95, -0.01, 0.82, 0, 0);
 }
@@ -213,8 +215,8 @@ a {
 .links {
   position: fixed;
   width: 100%;
-  bottom: 10px;
-  left: -10px;
+  bottom: 20px;
+  left: -38px;
   transform: scaleX(-1);
 }
 
@@ -223,10 +225,11 @@ a {
 }
 
 .link a {
+  font-family: 'Raleway', sans-serif;
   display: block;
   font-size: 22px;
-  padding: 0 10px;
-  margin-right: 20px;
+  padding: 0 12px;
+  margin-right: 22px;
   font-weight: bold;
   transition: all 0.2s ease-in;
   color: #ffffff60;
@@ -235,4 +238,30 @@ a {
 .link a:hover {
   color: #fff;
   transform: scale(1.2);
+}
+
+.front-button {
+  font-family: 'Raleway', sans-serif;
+  cursor: pointer;
+  position: fixed;
+  bottom: 5%;
+  right: 8%;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background-color: #a71111;
+  color: #ffffff80;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  line-height: 80px;
+  transition: all 0.3s ease-in;
+}
+
+.front-button:hover {
+  outline: 6px solid #ffffff60;
+  background-image: url(./book.png);
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
 }
