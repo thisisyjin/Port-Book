@@ -50,12 +50,14 @@
                 </li>
                 <li class="link">
                   <a href="https://velog.io/@thisisyjin" target="_blank"
-                    >Dev Blog [NEW]</a
+                    >Dev Blog</a
                   >
                 </li>
                 <li class="link">
-                  <a href="https://mywebproject.tistory.com/" target="_blank"
-                    >Dev Blog</a
+                  <a
+                    href="https://successful-education-3c9.notion.site/Yeonjin-Lee-d6772f7b10c240e9a9a76b06e3813bcb"
+                    target="_blank"
+                    >Portfolio</a
                   >
                 </li>
               </ul>
@@ -94,16 +96,18 @@
           />
         </svg>
       </div>
+      <div class="front-button">RE</div>
     </div>
 
     <script>
-      const $book = document.querySelector('.book');
+      const $frontBtn = document.querySelector('.front-button');
       const $back = document.querySelector('.left-button');
 
       $back.addEventListener('click', () => {
         window.open('./p9/open-9.html', '_self'); // react Link
       });
-      $book.addEventListener('click', () => {
+
+      $frontBtn.addEventListener('click', () => {
         window.open('./index.html', '_self'); // react Link
       });
     </script>
